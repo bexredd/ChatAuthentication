@@ -26,12 +26,13 @@
 </head>
 
 <body>
+    <a id="homeLink" class="btn" href="/">Home</a>
     <div ng-controller="chatController">
         <form novalidate class="simple-form">
             <br /> Chat:
             <input type="text" ng-model="user.chat" />
             <br />
-            <input type="submit" ng-click="update(user)" value="Save" />
+            <input type="submit" ng-click="update(user)" class="btn" value="Send Message" />
         </form>
         <ul>
             <li ng-repeat='line in chats'>
