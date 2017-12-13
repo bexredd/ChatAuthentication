@@ -10,11 +10,12 @@
     <div class="form-container" ng-controller="myController">
         <p id="sectionTitle" class="form-header">User Profile</p>
         <form method="POST" action="/user/update">
-            <label>Picture:</label>
-            <input type="url" id="pic" class="inp" name="pic" ng-model="user.picture" />
             <label>Username:</label>
             <input type="text" id="username" class="inp" name="username" ng-model="user.username" disabled>
             <br>
+            <label>Picture:</label>
+            <input type="url" id="pic" class="inp" name="pic" ng-model="user.picture" />
+            <br />
             <label>Email:</label>
             <input type="email" id="email" class="inp" name="email" ng-model="user.email">
             <br>

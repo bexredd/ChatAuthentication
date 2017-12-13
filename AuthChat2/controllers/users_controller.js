@@ -69,7 +69,7 @@ exports.updateUser = function(req, res) {
     user.set("email", req.body.email);
     user.set("quote", req.body.color);
 
-    user.save(function(err) {
+    user.save(function (err) {
       if (err) {
         res.sessor.error = err;
       } else {
