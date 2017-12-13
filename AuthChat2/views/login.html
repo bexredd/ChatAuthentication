@@ -11,15 +11,15 @@
         <p class="form-header">Login</p>
         <form method="POST" action="/login">
             <label>Username:</label>
-            <input type="text" id="username" name="username">
+            <input type="text" id="username" class="inp" name="username">
             <br>
             <label>Password:</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" class="inp" name="password">
             <br>
-            <input type="submit" id="login" value="Login">
+            <input type="submit" id="login" class="btn" value="Login">
         </form>
     </div>
-    <a id="signUpLink" href="/signup">Sign Up</a>
+    <a id="signUpLink" class="btn" href="/signup">Sign Up</a>
     <hr>
     <span id="loginMsg">
         <%= msg %>

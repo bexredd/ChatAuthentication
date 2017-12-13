@@ -11,19 +11,19 @@
         <p id="sectionTitle" class="form-header">User Profile</p>
         <form method="POST" action="/user/update">
             <label>Username:</label>
-            <input type="text" id="username" name="username" ng-model="user.username" disabled>
+            <input type="text" id="username" class="inp" name="username" ng-model="user.username" disabled>
             <br>
             <label>Email:</label>
-            <input type="email" id="email" name="email" ng-model="user.email">
+            <input type="email" id="email" class="inp" name="email" ng-model="user.email">
             <br>
             <label>Favorite Color:</label>
-            <input type="text" id="color" name="color" ng-model="user.color">
+            <input type="text" id="color" class="inp" name="color" ng-model="user.color">
             <br>
-            <input type="submit" id="save" value="Save">
+            <input type="submit" id="save" class="btn" value="Save">
         </form>
     </div>
     <form method="POST" action="/user/delete">
-        <input type="submit" id="delete" value="Delete User">
+        <input type="submit" id="delete" class="btn" value="Delete User">
     </form>
     <hr>
     <span id="userMsg">
