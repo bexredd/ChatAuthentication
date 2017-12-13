@@ -10,13 +10,15 @@
     <div class="form-container" ng-controller="myController">
         <p id="sectionTitle" class="form-header">User Profile</p>
         <form method="POST" action="/user/update">
+            <label>Picture:</label>
+            <input type="url" id="pic" class="inp" name="pic" ng-model="user.picture" />
             <label>Username:</label>
             <input type="text" id="username" class="inp" name="username" ng-model="user.username" disabled>
             <br>
             <label>Email:</label>
             <input type="email" id="email" class="inp" name="email" ng-model="user.email">
             <br>
-            <label>Favorite Color:</label>
+            <label>Quote:</label>
             <input type="text" id="color" class="inp" name="color" ng-model="user.color">
             <br>
             <input type="submit" id="save" class="btn" value="Save">
@@ -31,7 +33,7 @@
     </span>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="/javascripts/my_app.js"></script>
-    <a id="homeLink" href="/">Home</a>
+    <a id="homeLink" class="btn" href="/">Home</a>
 </body>
 
 </html>
