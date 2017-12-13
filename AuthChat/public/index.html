@@ -17,7 +17,7 @@
   };
   firebase.initializeApp(config);
 </script>
-
+  <link rel="stylesheet" href="stylesheets/style.css">
 <!-- AngularJS -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <!-- AngularFire -->
@@ -30,9 +30,9 @@
 
 <div ng-controller="chatController">
 <form novalidate class="simple-form">
-  Name: <input type="text" ng-model="user.name" /><br />
-  Chat: <input type="text" ng-model="user.chat" /><br />
-  <input type="submit" ng-click="update(user)" value="Save" />
+  Name: <input type="text" ng-model="user.name" id="in"/><br />
+  Chat: <input type="text" ng-model="user.chat" id="in"/><br />
+  <input type="submit" ng-click="update(user)" value="Save" id="btn"/>
 </form>
 <ul>
 <li ng-repeat='line in chats'>

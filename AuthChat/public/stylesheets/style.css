@@ -46,3 +46,59 @@ img {
 a {
     color: palegreen;
 }
+
+#btn {
+	-moz-box-shadow:inset 1px -5px 7px -1px #59bdff;
+	-webkit-box-shadow:inset 1px -5px 7px -1px #59bdff;
+	box-shadow:inset 1px -5px 7px -1px #59bdff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #78cafa), color-stop(1, #0084f7));
+	background:-moz-linear-gradient(top, #78cafa 5%, #0084f7 100%);
+	background:-webkit-linear-gradient(top, #78cafa 5%, #0084f7 100%);
+	background:-o-linear-gradient(top, #78cafa 5%, #0084f7 100%);
+	background:-ms-linear-gradient(top, #78cafa 5%, #0084f7 100%);
+	background:linear-gradient(to bottom, #78cafa 5%, #0084f7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#78cafa', endColorstr='#0084f7',GradientType=0);
+	background-color:#78cafa;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:2px solid #0b0e07;
+	display:inline-block;
+    align-content:center;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 1px #263666;
+}
+#btn:active {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0084f7), color-stop(1, #78cafa));
+	background:-moz-linear-gradient(top, #0084f7 5%, #78cafa 100%);
+	background:-webkit-linear-gradient(top, #0084f7 5%, #78cafa 100%);
+	background:-o-linear-gradient(top, #0084f7 5%, #78cafa 100%);
+	background:-ms-linear-gradient(top, #0084f7 5%, #78cafa 100%);
+	background:linear-gradient(to bottom, #0084f7 5%, #78cafa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0084f7', endColorstr='#78cafa',GradientType=0);
+	background-color:#0084f7;
+}
+
+#in {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 5px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,88,160,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: 1px 1px 0 rgba(214,234,255,0.66) ;
+}
