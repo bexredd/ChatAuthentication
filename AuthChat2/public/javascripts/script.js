@@ -5,11 +5,13 @@ myApp.controller("chatController", [
   "$http",
   function($scope, $firebaseArray, $http) {
       var name;
+      var url;
     $http
       .get("/user/profile")
       .success(function(data, status, headers, config) {
         $scope.user = data;
         console.log(data.username);
+        url = data.url;
         name = data.username;
         $scope.error = "";
       })
@@ -24,6 +26,7 @@ myApp.controller("chatController", [
     $scope.chats = $firebaseArray(ref);
     $scope.update = function(user) {
       var newmessage = {
+        picture: url,
         from: name || "anonymous",
         body: user.chat
       };
