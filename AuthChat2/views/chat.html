@@ -36,7 +36,10 @@
         </form>
         <ul>
             <li ng-repeat='line in chats'>
-                {{line.from}} - {{line.body}}
+                <div>
+                    <img src="{{ line.picture }}" style="height: 40px; position:relative" alt="picture"> {{line.from}} - {{line.body}}
+                </div>
+                
             </li>
         </ul>
     </div>

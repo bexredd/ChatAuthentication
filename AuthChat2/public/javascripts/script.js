@@ -26,7 +26,7 @@ myApp.controller("chatController", [
     $scope.chats = $firebaseArray(ref);
     $scope.update = function(user) {
       var newmessage = {
-        picture: url,
+        picture: url || "https://avatars3.githubusercontent.com/u/31780636?s=400&u=197f4590a6962f0cf38176f0f662a37e1aace092&v=4",
         from: name || "anonymous",
         body: user.chat
       };
