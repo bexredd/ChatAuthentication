@@ -34,10 +34,10 @@
             <br />
             <input type="submit" ng-click="update(user)" class="btn" value="Send Message" />
         </form>
-        <ul>
+        <ul style=" list-style: none;">
             <li ng-repeat='line in chats'>
                 <div>
-                    <img src="{{ line.picture }}" style="height: 40px; position:relative" alt="picture"> {{line.from}} - {{line.body}}
+                    <img src="{{ line.picture }}" style="height: 40px; position:relative; border-radius: 50%;" alt="picture"> {{line.from}} - {{line.body}}
                 </div>
                 
             </li>
